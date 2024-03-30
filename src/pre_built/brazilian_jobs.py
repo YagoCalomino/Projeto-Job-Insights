@@ -8,7 +8,7 @@ def read_brazilian_file(path: str) -> List[Dict]:
     Parameters
     ----------
     path : str
-        Full path to file
+        Full path to file !
 
     Returns
     -------
