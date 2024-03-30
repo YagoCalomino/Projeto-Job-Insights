@@ -1,7 +1,6 @@
 from src.insights.jobs import ProcessJobs
 from typing import List
 
-# Classe para processar indústrias
 class ProcessIndustries(ProcessJobs):
     def __init__(self):  # Inicialização da classe
         super().__init__()
