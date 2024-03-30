@@ -3,11 +3,11 @@ from typing import Dict, List, Union
 from src.insights.jobs import ProcessJobs
 
 
-class ProcessSalaries(ProcessJobs):   # Inicialização da classe
+class ProcessSalaries(ProcessJobs):  # Inicialização da classe
     def __init__(self):
         super().__init__()
 
-    def get_max_salary(self) -> int: # Obter o maior salário
+    def get_max_salary(self) -> int:  # Obter o maior salário
         biggest_salary = 0
 
         for job in self.jobs_list:
@@ -35,10 +35,10 @@ class ProcessSalaries(ProcessJobs):   # Inicialização da classe
 
         return smallest_salary
 
-    def matches_salary_range(self, job: Dict, salary: Union[int, str]) -> bool: # Verificar se o salário está dentro do intervalo
+    def matches_salary_range(self, job: Dict, salary: Union[int, str]) -> bool:
         pass
 
-    def filter_by_salary_range( # Filtrar trabalhos por intervalo de salário
+    def filter_by_salary_range(  # Filtrar trabalhos por intervalo de salário
         self, jobs: List[dict], salary: Union[str, int]
     ) -> List[Dict]:
         pass
